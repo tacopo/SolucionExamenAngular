@@ -1,0 +1,9 @@
+<section class="container">
+  <div class="row">
+    @for (obra of obras; track obra.nombreObra){
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <app-tarjeta [rutaImagen]="obra.rutaImg" [nombreObra]="obra.nombreObra"/>
+      </div>
+    }
+  </div>
+</section>
